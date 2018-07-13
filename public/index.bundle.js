@@ -104,8 +104,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-eval("\n\n__webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\"); //sass 연결\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nvar DOM = {\n    body: '#Body'\n};\n\n$(DOM.body).append('<p>TEST</p>');\n$(DOM.body).css('background-color', '#ffd200');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\"); //sass 연결\n\nconst $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nconst DOM = {\n    body: '#Body'\n};\n\n$(DOM.body).append('<p>TEST</p>');\n$(DOM.body).css('background-color', '#ffd200');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
