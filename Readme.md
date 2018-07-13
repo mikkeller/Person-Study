@@ -44,6 +44,11 @@ module.exports = {
             }
         ]
     },
+    optimization: {
+        minimizer: [
+            new UglifyJSPlugin()
+        ]
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'styles.css'
