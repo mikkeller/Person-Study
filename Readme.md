@@ -17,6 +17,7 @@
 ~~~
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // sass를 css로 뱉어주는 plugin
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin'); // uglifyjs plugin - js 용량 압축 
 
 module.exports = {
     entry: './src/index.js',
@@ -66,3 +67,14 @@ intelliJ에 개발 font 사용하기(D2Coding)
 1. Settings > Editor > Colors & Fonts > Font로 이동합니다.
 2. font를 'D2Coding-Ligatures'로 변경합니다.
 3. 하단의 'Enable font ligatures' 체크박스를 선택합니다.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 현재 설정
+* babel
+* sass(css 파일로 변환하여 붙게 작업)
+* build 
