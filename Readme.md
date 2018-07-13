@@ -1,8 +1,8 @@
-# webpack 복습
+# Webpack develop config
 
 * npm init -y 로 package.json 만들고 시작
-* npm i -D babel babel-cli babel-loader babel-preset-env webpack webpack-cli   로 설치한다.
-* root에 .babelrc 파일 생성(babel사용) 아래와 같이 파일 내용을 타이핑 해준다.
+* npm i -D babel babel-cli babel-loader babel-preset-env webpack webpack-cli style-loader css-loader sass-loader mini-css-extract-plugin 로 설치한다.
+* root에 .babelrc 파일 생성(babel사용) 아래와 같이 파일 내용을 작성 해준다.
 
 ~~~
 {
@@ -12,11 +12,11 @@
 }
 ~~~
 
-* root에 .webpack.config.js 파일 생성(webpack사용) 아래와 같이 파일 내용을 타이핑 해준다.
+* root에 .webpack.config.js 파일 생성(webpack사용) 아래와 같이 파일 내용을 작성 해준다.
 
 ~~~
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // sass를 css로 뱉어주는 plugin
 
 module.exports = {
     entry: './src/index.js',
@@ -58,11 +58,11 @@ module.exports = {
 "start": "webpack --mode=development --watch",
 ~~~
 
-#D2Coding ligatures
+# D2Coding ligatures
 D2Coding 공식 홈페이지: <a href="https://github.com/naver/d2codingfont" target="_blank">https://github.com/naver/d2codingfont</a>
 
-##설정방법
+## 설정방법
 intelliJ에 개발 font 사용하기(D2Coding)
 1. Settings > Editor > Colors & Fonts > Font로 이동합니다.
 2. font를 'D2Coding-Ligatures'로 변경합니다.
-3. 하단의 'Emab;ed font ligatures' 체크박스를 선택합니다.
+3. 하단의 'Enable font ligatures' 체크박스를 선택합니다.
