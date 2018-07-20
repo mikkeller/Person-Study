@@ -1,8 +1,9 @@
 $alba: #ffd200;
+$default_font: 30px;
 
 p {
   padding: 20px;
-  font-size:20px;
+  font-size: $default_font;
   font-weight:bold;
   backgroiund-color: $alba;
   color: #222;

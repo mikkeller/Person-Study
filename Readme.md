@@ -20,6 +20,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // sass를 css�
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin'); // uglifyjs plugin - js 용량 압축 
 
 module.exports = {
+    mode: 'development', // webpack4에서 추가되었습니다. mode가 development면 개발용, production이면 배포용입니다. 배포용 일 경우에는 알아서 최적화가 적용됩니다. 따라서 기존 최적화플러그인들이 대량으로 호환되지 않습니다.
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'public'),
@@ -78,8 +79,8 @@ intelliJ에 개발 font 사용하기(D2Coding)
 <br>
 <br>
 <br>
-
+ㅎ
 # 현재 설정
 * babel
 * sass(css 파일로 변환하여 붙게 작업)
-* build 
+* bundling(아직 Module 나누기 전) 

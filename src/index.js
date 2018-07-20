@@ -1,4 +1,5 @@
-require('./styles.scss'); //sass 연결
+require('./css/styles.scss'); //sass 연결
+require('./prototype.js');
 
 const $ = require('jquery');
 const DOM = {

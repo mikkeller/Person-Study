@@ -97,6 +97,17 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
+/***/ "./src/css/styles.scss":
+/*!*****************************!*\
+  !*** ./src/css/styles.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/css/styles.scss?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -104,18 +115,18 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\"); //sass 연결\n\nconst $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nconst DOM = {\n    body: '#Body'\n};\n\n$(DOM.body).append('<p>TEST</p>');\n$(DOM.body).css('background-color', '#ffd200');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__(/*! ./css/styles.scss */ \"./src/css/styles.scss\"); //sass 연결\n__webpack_require__(/*! ./prototype.js */ \"./src/prototype.js\");\n\nconst $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nconst DOM = {\n    body: '#Body'\n};\n\n$(DOM.body).append('<p>TEST</p>');\n$(DOM.body).css('background-color', '#ffd200');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/styles.scss":
-/*!*************************!*\
-  !*** ./src/styles.scss ***!
-  \*************************/
+/***/ "./src/prototype.js":
+/*!**************************!*\
+  !*** ./src/prototype.js ***!
+  \**************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles.scss?");
+eval("/**\n * _private 규칙 변형 패턴\n * _name 또는 _getElements()와 같이 비공개라는 의미로 밑줄을 끝에 붙인다.\n * _protected 프로퍼티에는 밑줄 한 개, __private() 프로퍼티에는 밑줄 두 개를 사용한다.\n *\n * 공통 js Parameter\n * 함수의 확장성을 고려하여, Parameter 값을 Json 형태로 사용\n * getFunction({id: 'id', name: 'name'});\n */\n\n/**\n * common js 컨트롤 클래스\n *\n * 인스턴스를 생성\n * var _commonctrl = new CommonCtrl('');\n *\n * @date    : 2018-07-20\n * @author  : Kim, Myung-Wook\n *\n * @caution : Common에 사용되는 함수는 json형태의 parameter로 전달 (확장성 고려)\n */\n\nvar CommonCtrl = function (param) {};\n\n// CommonCtrl prototype\nCommonCtrl.prototype = {\n  /**\n   * Undefinded Check\n   *\n   * @param obj\n   * @return true or false\n   */\n\n  isUndefined: function (obj) {\n    return typeof obj != \"undefined\" ? true : false;\n  }\n};\n\n//# sourceURL=webpack:///./src/prototype.js?");
 
 /***/ })
 
