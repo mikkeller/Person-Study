@@ -79,7 +79,7 @@ intelliJ에 개발 font 사용하기(D2Coding)
 <br>
 <br>
 <br>
-ㅎ
+
 # 현재 설정
 * babel
 * sass(css 파일로 변환하여 붙게 작업)
