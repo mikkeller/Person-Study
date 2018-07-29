@@ -115,7 +115,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./css/styles.scss */ \"./src/css/styles.scss\"); //sass 연결\n__webpack_require__(/*! ./prototype.js */ \"./src/prototype.js\");\n\nconst $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nconst DOM = {\n    body: '#Body'\n};\n\n$(DOM.body).append('<p>TEST</p>');\n$(DOM.body).css('background-color', '#ffd200');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__(/*! ./css/styles.scss */ \"./src/css/styles.scss\"); //sass 연결\n__webpack_require__(/*! ./prototype.js */ \"./src/prototype.js\");\n\nconst $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nconst DOM = {\n    body: '#Body'\n};\n\n$(DOM.body).append('<p>TEST</p>');\n$(DOM.body).addClass('__block');\n$(DOM.body).css('background-color', '#ffd200');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

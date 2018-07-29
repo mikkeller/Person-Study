@@ -4,4 +4,6 @@ p {
   font-weight: bold;
   backgroiund-color: #ffd200;
   color: #222; }
+  p__block {
+    background-color: blue; }
 

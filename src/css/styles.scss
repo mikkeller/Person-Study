@@ -2,6 +2,9 @@ $alba: #ffd200;
 $default_font: 30px;
 
 p {
+  &__block {
+      background-color:blue;
+  }
   padding: 20px;
   font-size: $default_font;
   font-weight:bold;

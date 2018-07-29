@@ -7,4 +7,5 @@ const DOM = {
 };
 
 $(DOM.body).append('<p>TEST</p>');
+$(DOM.body).addClass('__block');
 $(DOM.body).css('background-color', '#ffd200');
